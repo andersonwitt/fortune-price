@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: green;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  transition: 300ms;
+  background-color: rgb(26, 74, 26);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1976d2;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  column-gap: 1rem;
+}
+
+main {
+  padding: 20px;
+  min-height: calc(100vh - 251px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+li.selected {
+  color: #fff;
+  background-color: green;
+}
+
+li:hover {
+  color: #fff;
+  transition: 300ms;
+  background-color: green;
+  cursor: pointer;
+}
+
+li span {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container p {
+  margin: 5px 0;
+}
+
+.container p:first-child {
+  font-weight: bold;
+}
